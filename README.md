@@ -12,6 +12,11 @@
 
 ### 宝塔纯净版介绍
 
+为什么建议使用宝塔 7.7版本: 
+- BT面板从2020年9月份V7.4.5版本开始要求绑定注册会员帐号且绑定手机号。
+- 由于BT面板V7.7.0之前的旧版本尚未对userInfo.json文件进行验证，因此可以通过降级的方法绕过新版本的绑定限制。
+- 宝塔面板从7.8版本之后，无法使用各种方法绕过绑定账号和手机号码，并且不绑定账号无法下载安装插件。
+
 如果你正在寻找宝塔面板专业版的免费替代品，尤其是需要支持 Nginx + PHP + MySQL 环境，还自带 WAF 功能，同时坚持开源免费路线，那你的需求其实很明确，也很合理。从实际体验和功能匹配度来看，以下几款开源免费的面板和独立 WAF 方案，可以成为你当前或未来长期使用的稳定选择。
 
 * 基于BT官方剥离了所有与BT官方的通信、上报、下发、以及登录绑定手机号才能使用的功能；
@@ -40,8 +45,6 @@ URL=https://www.aapanel.com/script/install_6.0_en.sh && if [ -f /usr/bin/curl ];
 
 ## 脚本2：夸父面板 mdserver-web
 
-基于宝塔开发的开源面板工具。
-
 * 核心优势：轻量（内存占用约 20MB）、界面与宝塔高度相似，支持一键安装 Nginx、PHP 多版本、MySQL 等环境；自带基础防火墙（端口管理）和 SSL 证书申请功能。
 
 * 安装方式：支持 Centos/Ubuntu/Debian，一条命令快速安装：
@@ -65,13 +68,12 @@ wget -O install_panel.sh https://download.hostpanel.cc/install_panel.sh && bash 
 
 Centos安装命令：
 
-```
+```bash
 yum install -y wget && wget -O install.sh https://install.baota.sbs/install/install_6.0.sh && sh install.sh
 ```
 
 Ubuntu/Debian安装命令：
-
-```
+```bash
 wget -O install.sh https://install.baota.sbs/install/install_6.0.sh && bash install.sh
 ```
 
@@ -83,20 +85,17 @@ wget -O install.sh https://install.baota.sbs/install/install_6.0.sh && bash inst
 Linux面板7.9.10安装脚本 专业版：
 
 Centos安装命令：
-
-```
+```bash
 yum install -y wget && wget -O install.sh http://www.btkaixin.net/install/install_6.0.sh && sh install.sh
 ```
 
 Ubuntu/Debian安装命令：
-
-```
+```bash
 wget -O install.sh http://www.btkaixin.net/install/install_6.0.sh && bash install.sh
 ```
 
 一键更新脚本：
-
-```
+```bash
 curl http://www.btkaixin.net/install/update6.sh|bash
 ```
 
@@ -106,43 +105,43 @@ curl http://www.btkaixin.net/install/update6.sh|bash
 
 Centos全新安装命令：根据系统执行框内命令开始安装（大约2分钟完成面板安装）升级后可能需要重启面板
 
-```shell
+```bash
 yum install -y wget && wget -O install.sh http://v7.hostcli.com/install/install_6.0.sh && sh install.sh
 ```
 
 Ubuntu/Deepin全新安装命令：
 
-```shell
+```bash
 wget -O install.sh http://v7.hostcli.com/install/install-ubuntu_6.0.sh && sudo bash install.sh
 ```
 
 Debian全新安装命令：
 
-```shell
+```bash
 wget -O install.sh http://v7.hostcli.com/install/install-ubuntu_6.0.sh && bash install.sh
 ```
 
 Fedora全新安装命令:：
 
-```shell
+```bash
 wget -O install.sh http://v7.hostcli.com/install/install_6.0.sh && bash install.sh
 ```
 
 已经安装官方面板，执行下列命令升级到7.6.0纯净版：
 
-```shell
+```bash
 curl http://v7.hostcli.com/install/update6.sh|bash
 ```
 
 其他非官方版本(含开心版、快乐版、纯净版等 7.4.5至7.6.0版本之间所有版本均可)，执行下列命令升级到7.6.0纯净版：
 
-```shell
+```bash
 curl http://v7.hostcli.com/install/update6.sh|bash
 ```
 
 任意非官方版本还原到官方最新版
 
-```shell
+```bash
 curl http://download.bt.cn/install/update6.sh|bash
 ```
 
