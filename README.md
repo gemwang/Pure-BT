@@ -15,7 +15,7 @@
 为什么建议使用宝塔 7.7版本: 
 - BT面板从2020年9月份V7.4.5版本开始要求绑定注册会员帐号且绑定手机号。
 - 由于BT面板V7.7.0之前的旧版本尚未对userInfo.json文件进行验证，因此可以通过降级的方法绕过新版本的绑定限制。
-- 宝塔面板从7.8版本之后，无法使用各种方法绕过绑定账号和手机号码，并且不绑定账号无法下载安装插件。
+- 宝塔面板7.8版本使用各种方法均无法绕过绑定账号，并且不绑定账号无法下载安装插件。
 
 如果你正在寻找宝塔面板专业版的免费替代品，尤其是需要支持 Nginx + PHP + MySQL 环境，还自带 WAF 功能，同时坚持开源免费路线，那你的需求其实很明确，也很合理。从实际体验和功能匹配度来看，以下几款开源免费的面板和独立 WAF 方案，可以成为你当前或未来长期使用的稳定选择。
 
@@ -39,7 +39,7 @@
 aaPanel面板和宝塔面板都是同一家公司在运营，只是aaPanel面板主要服务于海外客户，宝塔面板服务于本地客户。通常如果使用的是海外的服务器部署web环境，建议使用aaPanel面板。
 
 Centos/Ubuntu/Debian 安装命令：
-```
+```bash
 URL=https://www.aapanel.com/script/install_6.0_en.sh && if [ -f /usr/bin/curl ];then curl -ksSO "$URL" ;else wget --no-check-certificate -O install_6.0_en.sh "$URL";fi;bash install_6.0_en.sh aapanel
 ```
 
