@@ -50,7 +50,7 @@ URL=https://www.aapanel.com/script/install_6.0_en.sh && if [ -f /usr/bin/curl ];
 curl --insecure -fsSL https://cdn.jsdelivr.net/gh/midoks/mdserver-web@latest/scripts/install.sh | bash
 ```
 
-## 脚本4：hostPanel
+## 脚本3：hostPanel
 
 * 核心优势：基于宝塔 7.7 改造的”真离线版”，去除云端通信、强制登录及广告；所有插件（如 Nginx/MySQL）本地化安装，无需联网；界面优化更简洁。
 
@@ -59,7 +59,7 @@ curl --insecure -fsSL https://cdn.jsdelivr.net/gh/midoks/mdserver-web@latest/scr
 wget -O install_panel.sh https://download.hostpanel.cc/install_panel.sh && bash install_panel.sh
 ```
 
-## 脚本3：宝塔破解版
+## 脚本4：宝塔破解版
 
 * 来源: [https://baota.sbs/](https://baota.sbs/)
 
